@@ -28,7 +28,7 @@ const ShowDay = ({ idx, habit, updateStatus }) => {
       default:
         setColor("grey");
     }
-  }, [value]);
+  }, [value, idx, habit.id, updateStatus]);
 
   //UPDATE THE STATUS VALUE
   const handleStatusChange = (e) => {
